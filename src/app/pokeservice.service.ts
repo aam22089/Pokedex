@@ -13,4 +13,7 @@ export class PokeserviceService {
   getPokeList(): Observable<any> {
     return this.http.get(`${this.apiUrl}?limit=${this.limit}&offset=${this.offset}`)
   }
+  getPokeDetails(urlPokemon: any): Observable<any> {
+    return this.http.get(urlPokemon);
+  }
 }
