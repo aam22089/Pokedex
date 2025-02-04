@@ -16,7 +16,6 @@
     <ng-container *ngIf="PokeList; else loading">
       <ion-card *ngFor="let item of PokeList index as i" (click)="handleDetail(item.url)">
         <ion-card-header>
-          <ion-img [src]="handleImage(item)" alt="pokemon"></ion-img>
           <ion-card-title>{{item.name}}</ion-card-title>
         </ion-card-header>
       </ion-card>

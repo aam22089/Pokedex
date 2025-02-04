@@ -6,8 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PokeserviceService {
-  private apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=30&offset=0'
-  private limit = 50;
+  private apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=151&offset=0'
+  private limit = 151;
   private offset = 0;
   constructor(private http: HttpClient) { }
   getPokeList(): Observable<any> {
